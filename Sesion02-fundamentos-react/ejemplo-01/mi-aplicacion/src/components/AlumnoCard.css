@@ -9,6 +9,23 @@
   width: 200px;
 }
 
+.card__imagen {
+  border-radius: 50%;
+  box-shadow: 0px 0px 22px -8px rgba(0,0,0,0.75);
+  height: 100px;
+  width: 100px;
+}
+
+.card__aliasText {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.card__typeText {
+  font-size: 12px;
+  line-height: 18px;
+}
+
 .is-hidden {
   display: none;
 }

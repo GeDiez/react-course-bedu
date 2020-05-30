@@ -11,8 +11,8 @@ function AlumnoCard(props) {
   return (
     <div className={`card ${isHidden ? 'is-hidden' : ''}` }>
       <img src={alumno.avatar} width="100px" alt=""/>
-      <p>{name}</p>
-      <p>{alumno.email}</p>
+      <p className="card__aliasText">{name}</p>
+      <p className="card__typeText">{alumno.email}</p>
     </div>)
 }
 

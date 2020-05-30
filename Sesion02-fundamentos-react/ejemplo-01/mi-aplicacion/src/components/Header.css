@@ -1,0 +1,40 @@
+.app {
+  width: 100%;
+}
+
+.app__pokemonList {
+  padding: 20px 30px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.app__pokemonList .card {
+  margin: 0 10px 10px;
+}
+
+.header {
+  padding: 20px 40px;
+  width: 100%;
+}
+
+.header__titulo {
+  text-align: center;
+  font-weight: 25px;
+}
+
+.header__navbar {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 50px;
+}
+
+.header__navbar__button {
+  border: 0;
+  border-bottom: 3px solid;
+  background-color: transparent;
+  font-size: 14px;
+}
+
+.header__navbar__button.is-selected {
+  border-bottom-color: red;
+}
