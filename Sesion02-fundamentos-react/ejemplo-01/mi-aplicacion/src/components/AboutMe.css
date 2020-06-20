@@ -1,0 +1,21 @@
+.aboutMe {
+  margin: 20px auto 0;
+  border: 1px solid gray;
+  background-color: wheat;
+  display: flex;
+  max-width: 500px;
+}
+
+.aboutMe__avatar {
+  padding: 15px 10px 0;
+  width: 100px;
+}
+
+.aboutMe__avatar img {
+  width: 70px;
+}
+
+.aboutMe__content {
+  padding: 20px;
+  border-left: 1px dashed black;
+}

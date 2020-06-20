@@ -6,10 +6,15 @@ import React from 'react';
 // el punto de montaje con el HTML. Como su nombre lo indica requerimos las
 // cosas de React que son necesarias para usarse en el DOM
 import ReactDOM from 'react-dom';
+import { BrowserRouter as Router } from "react-router-dom";
 // Esta línea está importando un nuevo componente de React que se encuentra en
 // la ruta especificada
 import App from './App';
 
 // Aquí en efecto se está realizando el montaje de React en el HTML.
 // Se está montando App en el elemento HTML que tenga por id `root`
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(
+  <Router>
+    <App />
+  </Router>
+  , document.getElementById('root'));

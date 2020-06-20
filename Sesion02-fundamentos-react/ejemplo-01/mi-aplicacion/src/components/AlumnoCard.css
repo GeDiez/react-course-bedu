@@ -7,6 +7,18 @@
   border-radius: 6px;
   border: 1px solid #00000020;
   width: 200px;
+  /* nuevo */
+  position: relative;
+}
+
+  /* nuevo */
+.card__likeButton {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  background-color: transparent;
+  border-width: 0;
+  cursor: pointer;
 }
 
 .card__imagen {

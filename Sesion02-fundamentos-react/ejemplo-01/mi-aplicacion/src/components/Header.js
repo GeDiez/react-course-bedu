@@ -1,11 +1,11 @@
 import React from 'react'
+import { Link } from "react-router-dom";
 import './Header.css'
 
 function Header (props) {
   const {
+    currentPage,
     seleccionoTodos,
-    onClickTodos,
-    onClickFiltroFavoritos
   } = props
 
   return (
@@ -14,12 +14,24 @@ function Header (props) {
         Lista de Pokemones
       </h1>
       <nav className="header__navbar">
-        <button className={`header__navbar__button ${seleccionoTodos && 'is-selected'}`} onClick={onClickTodos}>
+        <Link
+          className={`header__navbar__button ${currentPage === 'pokemonList' && seleccionoTodos && 'is-selected'}`}
+          to='/pokemons/list?filter=todos'
+        >
           Todos
-        </button>
-        <button className={`header__navbar__button ${!seleccionoTodos && 'is-selected'}`}  onClick={onClickFiltroFavoritos}>
+        </Link>
+        <Link
+          className={`header__navbar__button ${currentPage === 'pokemonList' && !seleccionoTodos && 'is-selected'}`}
+          to='/pokemons/list?filter=favoritos'
+        >
           Filtrar por favoritos
-        </button>
+        </Link>
+        <Link
+          className={`header__navbar__button ${currentPage === 'me' && 'is-selected'}`}
+          to='/about_me'
+        >
+          Este soy yo
+        </Link>
       </nav>
     </header>
   )
