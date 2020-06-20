@@ -1,14 +1,7 @@
-import React, { useState, useEffect } from 'react'
-import Posts from "../../lib/Posts/posts";
+import React from 'react'
 
 const IndexPosts = (props) => {
-  const [posts, setPosts] = useState([])
-
-  useEffect(function () {
-    Posts().fetch().then(posts => {
-      setPosts(posts)
-    })
-  }, [])
+  const posts = []
 
   return (
     <div className="columns is-multiline">

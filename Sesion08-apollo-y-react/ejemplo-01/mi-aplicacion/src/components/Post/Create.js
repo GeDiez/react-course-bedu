@@ -1,12 +1,9 @@
 import React, {useState} from 'react'
-import Posts from "../../lib/Posts/posts";
 
 const CreatePost = props => {
   const [post, setPost] = useState({})
 
   function handleSubmit (ev) {
-    ev.preventDefault()
-    Posts().create(post)
   }
 
   return (
