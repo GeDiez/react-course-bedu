@@ -1,4 +1,7 @@
 import React from 'react';
+import { BrowserRouter as Router } from "react-router-dom";
+import MainLayout from './components/Layout/Main';
+import 'bulma';
 
 const query = `
 {
@@ -47,33 +50,11 @@ class App extends React.Component {
 
   render() {
     return (
-      <div>
-        <h1>GraphQL</h1>
-        <Post data={this.state.data} />
-      </div>
+      <Router>
+        <MainLayout />
+      </Router>
     )
   }
-}
-
-function Post(props) {
-  const { Post } = props.data
-
-  return (
-    <>
-      <h3>{`${Post.title} por ${Post.User.name}`}</h3>
-      <div>
-        <p>Comentarios:</p>
-        {
-          Post.Comments.map((e, i) => (
-            <div key={i}>
-              <p>{e.body}</p>
-              <p>{e.date}</p>
-            </div>
-          ))
-        }
-      </div>
-    </>
-  )
 }
 
 export default App;

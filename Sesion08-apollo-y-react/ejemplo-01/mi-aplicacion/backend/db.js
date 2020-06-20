@@ -4,6 +4,7 @@ module.exports = {
     { id: 2, title: "Sic Dolor amet", views: 65, user_id: 456 },
   ],
   users: [
+    { id: 1, name: "Gibran Lopez Morales"},
     { id: 123, name: "John Doe" },
     { id: 456, name: "Jane Doe" }
   ],
